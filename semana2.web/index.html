@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscrição no Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Inscrição no Blog</h1>
+
+        <p>Preencha o formulário para se inscrever no nosso blog.</p>
+
+        <form>
+
+            <div class="campos-linha">
+
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+                <label for="categoria">Categoria favorita:</label>
+
+                <select id="categoria" name="categoria">
+
+                    <option value="">
+                        Selecione uma categoria
+                    </option>
+
+                    <option value="tecnologia">
+                        Tecnologia
+                    </option>
+
+                    <option value="programacao">
+                        Programação
+                    </option>
+
+                    <option value="design">
+                        Design
+                    </option>
+
+                    <option value="games">
+                        Games
+                    </option>
+
+                </select>
+            </div>
+
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Digite uma mensagem"
+                ></textarea>
+            </div>
+
+
+            <button type="submit">
+                Inscrever-se
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
